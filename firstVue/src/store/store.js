@@ -28,7 +28,7 @@ const store = new Vuex.Store({
   },
 
   getter:{ // n é uma boa pratica acessar post direto
-      getPostList: state => state.post 
+      getPostList: state => state.posts
   },
 
   async createPost({state, dispatch, commit}, newPostInfo){

@@ -5,8 +5,8 @@
 
     <div v-for="post in postsList" :key="post._id">
       <p>
-        <span><b>User: {{ post.user }}</b></span><br />
-        <span>{{ post.content }}</span>
+        <span v-text = "post.user"></span>
+        <span v-text = "post.content"></span>
       </p>
     </div>
   </div>
@@ -14,8 +14,17 @@
 
 <script>
 import { mapState } from 'vuex'
+import { mapGetters, mapActions} from 'vuex'
 export default {
   name: 'posts',
+  computed:{
+    ...mapGetters(['getPostsList']),
+
+    postList(){
+      let list = this.getPostsList
+      return list.reverse() //reverte a lista pro mais recente i pro topo
+    }
+  },
   computed: mapState([
     'posts'
   ]),

@@ -67,10 +67,25 @@ const store = new.Vexs.Srore({
     }
 })
 
+/*
+
 montar um bindi com o clierna é fácil
 
 formate document vue - formata
 
 import Router from 'vue-router'
+
+/*eslint-disable*/ //se add ele em cima do arquio n dá tanto erro
+
+/*
+//ESLint - baixar extensão pra apontar erros
+
+//$vm0$store - no console
+
+lib bootsttrap
+https://bootstrap-vue.js.org/
+npm i bootstrap-vue --save
+
+
 
 */
