@@ -4,6 +4,8 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import Posts from '@/components/Posts'
+import Router from 'vue-router'
+import Store from './store/store'
 
 Vue.use(Router)
 

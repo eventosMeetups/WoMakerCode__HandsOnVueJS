@@ -67,4 +67,10 @@ const store = new.Vexs.Srore({
     }
 })
 
+montar um bindi com o clierna é fácil
+
+formate document vue - formata
+
+import Router from 'vue-router'
+
 */
